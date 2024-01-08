@@ -1,0 +1,252 @@
+* {
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all .8s linear;
+} 
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+label {
+    color: #fff;
+    font-weight: 400;
+    font-size: 10px;
+}
+.body {
+    display: flex;
+    overflow: hidden ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+img {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* KHUNG     */
+.iphone-frame {
+    margin-top: 24px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    position: relative;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 674px;
+    width: 332px;
+    border: 12px solid #000000;
+    border-radius: 40px;
+    box-shadow:  0 0 0 0 #666;
+}
+.iphone-frame .norch {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    width: 136px;
+    height: 24px;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.norch::before{
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 6px;
+    height: 4px;
+    width: 36px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 4px 0 #676767;
+    border: 0.5px solid #474747;
+}
+.norch::after {
+    content: '';
+    position: absolute;
+    right: 34px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 5px;
+    background-color: rgb(57, 57, 57);
+}
+.norch .rounded {
+    position: relative;
+}
+.norch .rounded::before { 
+    content: '';
+    position: absolute;
+    left: -14px;
+    /* background-color: #e2b64f; */
+    top: 0;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+    border-top-right-radius: 4px;
+    box-shadow: 1px -10px 0 0 #000;
+}
+.norch .rounded::after {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    height: 20px;
+    border-top-right-radius: 4px;
+    box-shadow: 1px -10px 0 0 #000;
+}
+
+/* NAV UI  */
+
+.nav {
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .left {
+    padding: 0 30px;
+    font-size: 12px;
+    margin: 0;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav .right {
+    padding: 0 15px;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+}
+.nav .right ion-icon {
+    color: #fff;
+    font-size: 17px;
+}
+.active {
+    z-index: 200;
+}
+
+
+/* APPLICATIONS  */
+
+.application-menu {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* .application-menu.active {
+    visibility: visible;
+} */
+
+
+.bottom-nav {
+    position: absolute;
+    bottom: 10px;
+    width: 288px;
+    left: 0;
+    height: fit-content;
+    margin: 0 10px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, .4);
+}
+.bottom-nav .button-app {
+    width: fit-content;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: -6px;
+}
+
+.first-slider {
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    left: 0;
+}
+.first-slider .app img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.first-slider .app label {
+    display: block;
+    margin-top: 2px;
+    text-align: center;
+}
+.applications {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+}
+.apps-icon {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 22px;
+    padding: 8px;
+    justify-content: center;
+}
+.app {
+    margin-top: -4px;
+}
+.indicators {
+    position: absolute;
+    display: flex;
+    bottom: 100px;
+    height: 10px;
+    width: 38px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0,0 , 0, 0.12);
+    border-radius: 6px;
+}
+.indicators span {
+    height: 6px;
+    width: 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.indicators span.active-screen {
+    background-color: #fff;
+}
+.button {
+    z-index: 102;
+    position: absolute;
+    bottom: 5px;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 114px;
+    border-radius: 20px;
+    background-color: #fff;
+}
