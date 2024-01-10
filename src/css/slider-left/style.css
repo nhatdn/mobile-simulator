@@ -5,8 +5,7 @@ form {
     overflow-y:hidden;
     background-color: rgba(140,124,109, .5);
     border-radius: 30px;
-    /* height: 650px; */
-    height:max-content;
+    height: 650px;
 }
 .slide-left .search-library {
     display: flex;
