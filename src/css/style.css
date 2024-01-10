@@ -134,6 +134,7 @@ img {
 .nav .right ion-icon {
     color: #fff;
     font-size: 17px;
+    padding: 0 2px;
 }
 .active {
     z-index: 200;
@@ -240,6 +241,7 @@ img {
     background-color: #fff;
 }
 .button {
+    cursor: pointer;
     z-index: 102;
     position: absolute;
     bottom: 5px;
@@ -249,4 +251,24 @@ img {
     width: 114px;
     border-radius: 20px;
     background-color: #fff;
+    /* animation: slide 2s infinite; */
+}
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .5);
 }
