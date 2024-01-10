@@ -71,8 +71,17 @@
     font-weight: 600;
 }
 .enter-password-nav {
-    height: fit-content;
-    padding: 10px 10px;
+    padding-top: 96px;
     display: flex;
     justify-content: space-between;
 }
+.enter-password-nav a {
+    font-size: 12px;
+    color: #fff;
+}
+.overlay {
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(0,0,0,.5);
+}
+

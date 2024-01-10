@@ -1,0 +1,125 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap');
+
+.search-box {
+    padding: 32px 16px 0 16px;
+    background-color: rgba(170,163,170,.8);
+    border-radius: 20px;
+    height: max-content;
+}
+.search-box-bar {
+    padding: 8px 0;
+    width: 100%;
+    background-color:#414141;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+.search-box-bar ion-icon {
+    font-size: 24px;
+    color: #fff;
+}
+.search-box-bar input {
+    border: none;
+    outline: none;
+    background-color:rgba(0, 0, 0, 0);
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.search-box-input::-webkit-input-placeholder { 
+    font-family: 'Poppins', sans-serif;
+    vertical-align: top;
+    display: inline-block !important;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+.list-search-box .timeline img {
+    display: block;
+    width: 100%;
+    height: 135px;
+  }
+.list-search-box .timeline {
+    position: relative;
+}
+.list-search-box .timeline span {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-indent: justify;
+    position: absolute;
+    top: 20%;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 16px;
+    letter-spacing:.0005rem ;
+}
+.list-search-box .timeline p {
+    text-transform: uppercase;
+    text-indent: justify;
+    position: absolute;
+    top: 70%;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 16px;
+}
+.search-box-item1 {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:16px;
+    margin-bottom: 16px;
+}
+.time-event ,.service-app {
+    padding: 12px;
+    border-radius: 20px;
+    width: 132px;
+}
+.time-event {
+    background-color: #fff;
+    color: #000;
+}
+.time-event h6{
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: -26px;
+}
+.time-event span {
+    font-size: 28px;
+}
+.time-event p {
+    font-size: 14px;
+}
+.service-app {
+    background-color: #3c7db7;
+    color: #b9d6e1;
+    font-weight: 500;
+    text-align: center;
+}
+.service-app .service-sub {
+    transform: translateY(50%);
+}
+.search-box-item2 {
+    background-color: #fff;
+    color: #000;
+    padding: 12px;
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+}
+.event {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.event img {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+}
