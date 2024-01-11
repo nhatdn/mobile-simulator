@@ -22,6 +22,7 @@
     padding: 1px;
     border: 1px solid #fff;
     border-radius: 50%;
+    cursor: pointer;
 }
 .img-camera-screen{
     position: relative;
@@ -65,6 +66,7 @@
     border-top: 1px solid yellow;
 }
 .img-camera-screen p {
+    cursor: pointer;
     position: absolute;
     bottom: 24px;
     left: 50%;
@@ -80,6 +82,7 @@
     color: #fff;
 }
 .footer-camera-screen .methol-camera {
+    cursor: pointer;
     margin-top: 6px;
     display: flex;
     align-items: center;
@@ -104,10 +107,12 @@
     margin: 16px;
 }
 .camera-press-btn ion-icon {
+    cursor: pointer;
     font-size: 68px;
     border-radius: 50%;
 }
 .camera-btn > ion-icon {
+    cursor: pointer;
     font-size: 24px;
     padding: 6px;
     background: rgba(255,255,255,.2);
