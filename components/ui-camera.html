@@ -59,14 +59,15 @@
                     <i class="fa-solid fa-chevron-up"></i>
                     <ion-icon name="timer"></ion-icon>
                 </div>
-                <div class="img-camera-screen">
-                    <img src="../src/img/ui.webp" alt="">
+                <div class="camera">
+                    <video id="video">Video stream not available.</video>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     <p>1x</p>
                 </div>
+                <canvas id="canvas"> </canvas>
                 <div class="footer-camera-screen">
                     <div class="methol-camera">
                         <span>Ảnh</span>
@@ -74,11 +75,13 @@
                         <span>Video</span>
                     </div>
                     <div class="camera-btn">
-                        <img src="../src/img/camera-ui1.jpg" alt="">
-                        <div class="camera-press-btn">
-                            <ion-icon name="radio-button-on"></ion-icon>
+                        <div class="output">
+                          <img id="photo"/>
                         </div>
-                        <ion-icon name="sync"></ion-icon>
+                            <button id="startbutton"><ion-icon name="radio-button-on"></ion-icon></button>
+                            <button id="changebutton">
+                                <ion-icon name="sync"></ion-icon>
+                            </button>
                     </div>
                 </div>
             </div>
@@ -87,6 +90,7 @@
         </div>
         <div class="button"></div>
     </div>
+    <script src="../camera.js"></script>
     <script src="./src/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
