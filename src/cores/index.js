@@ -124,3 +124,8 @@
     // once loading is complete.
     window.addEventListener("load", startup, false);
   })();
+
+  function myFunction() {
+    const list = document.getElementById("video").classList;
+    list.add("myStyle");
+  }

@@ -1,0 +1,43 @@
+.nav-mess {
+    position: fixed;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    flex: 1;
+    background: #232323;
+    border-top-right-radius:28px ;
+    border-top-left-radius:28px ;
+    padding: 44px 16px 12px 12px;
+    display: none;
+}
+
+.nav-mess .fix {
+    cursor: pointer;
+    color: #105ba7;
+    font-size: 12px;
+}
+.nav-mess .title {
+    color: #fff;
+    font-size: 12px;
+}
+.nav-mess i {
+    font-size: 22px;
+    cursor: pointer;
+}
+.show-all-message {
+    color: #fff;
+    width: 100%;
+    height: 650px;
+    border-radius: 28px;
+    background: #000;
+}
+.item-message {
+    display: flex;
+    justify-content:flex-start ;
+}

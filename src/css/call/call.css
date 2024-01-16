@@ -1,0 +1,69 @@
+.call {
+     background: #353a40;
+     padding-top: 40px;
+     border-radius: 30px;
+     height: 650px;
+     color: #fff;
+     font-weight: 400;
+}
+.call-icon {
+    text-align: right;
+    padding-right: 12px;
+    margin-bottom: 12px;
+}
+.call-icon ion-icon {
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.call span {
+    display: block;
+}
+.calling {
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.call .phone-number {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.call-list-btn {
+    padding: 280px 16px 0 16px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 36px;
+    text-align: center;
+}
+.call-btn {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #64676c;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.call-btn ion-icon {
+    font-size: 28px;
+    transform: translateY(60%);
+}
+.call-btn span {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+}
+.call-btn.active {
+    background-color: #ff4539;
+}
+.call-btn.active ion-icon {
+    display: block;
+    width: 100%;
+    transform: translateY(60%) rotate(135deg);
+}
