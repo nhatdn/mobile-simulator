@@ -36,6 +36,7 @@ label {
     font-size: 12px;
 }
 .body {
+    margin: auto;
     display: flex;
     overflow: hidden ;
     justify-content: center;
@@ -52,7 +53,6 @@ img {
 
 /* KHUNG     */
 .iphone-frame {
-    margin-top: 24px;
     /* left: 50%;
     transform: translateX(-50%); */
     position: relative;

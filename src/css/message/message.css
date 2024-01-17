@@ -1,6 +1,4 @@
-.iphone-frame {
-    overflow: hidden;
-}
+
 .form-message {
     position: relative;
     background: rgb(68,68,71);
@@ -43,10 +41,12 @@
 }
 .show {
     overflow-y: scroll;
-    height: fit-content;
+    max-height: 654px;
+    border-radius: 29px;
 }
 .show::-webkit-scrollbar {
-    width: 2px;
+    width: 1px;
+    display: none;
 }
 .show::-webkit-scrollbar-thumb {
     background: #fff;
@@ -82,7 +82,7 @@
 .last-message-form {
     position: fixed;
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     right: 0;
     left: 0;
     padding: 12px 8px 36px 8px;
@@ -91,6 +91,8 @@
     justify-content: flex-start;
     background-color: #000;
     width: 100%;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
 }
 .last-message-form form {
     width: 100%;

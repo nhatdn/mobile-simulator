@@ -1,3 +1,4 @@
+.show-all-message {overflow-y: scroll;}
 .nav-mess {
     position: fixed;
     position: absolute;
@@ -14,7 +15,6 @@
     border-top-right-radius:28px ;
     border-top-left-radius:28px ;
     padding: 44px 16px 12px 12px;
-    display: none;
 }
 
 .nav-mess .fix {
@@ -40,4 +40,68 @@
 .item-message {
     display: flex;
     justify-content:flex-start ;
+    align-items: center;
+    padding: 6px 12px;
 }
+.item-message img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 4px;
+}
+.detail-message {
+    cursor: pointer;
+   padding: 0 0 8px 0;
+   border-bottom: .05rem solid #1a1a1a;
+   margin-left: 6px;
+}
+.detail-message span, .detail-message p {
+    margin: 0;
+}
+.detail-message .info-message .title-message {
+    font-weight: 600;
+    letter-spacing: .8px;
+}
+.time-message i {
+    font-size: 14px;
+    transform: translateY(20%);
+}
+.info-message .time-message, .description-message {
+    font-size: 10px;
+    color: #605f5f;
+}
+.info-message {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.description-message {
+    letter-spacing: .6px;
+    height: 28px;
+    line-height: 16px ;
+    white-space: word-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+::-webkit-scrollbar {
+    width: 2px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }

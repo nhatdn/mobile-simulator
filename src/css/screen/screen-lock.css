@@ -1,0 +1,83 @@
+.iphone-frame {
+    /* left: 50%;
+    transform: translateX(-50%); */
+    position: relative;
+    background-image: url(/mobile-simulator/src/img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 674px;
+    width: 332px;
+    border: 12px solid #000000;
+    border-radius: 40px;
+    box-shadow:  0 0 0 0 #666;
+}
+
+.lock-screen {
+    padding-top: 48px;
+    color: #fff;
+    height: 654px;
+}
+.lock-screen .lock-icon ion-icon{
+    width: 100%;
+    font-size: 12px;
+}
+.lock-screen .time span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.lock-screen .time h1 {
+    text-align: center;
+    font-size: 74px;
+    font-weight: 600;
+    line-height: 0;
+    letter-spacing: 1px;
+}
+.lock-screen .scr-lock-nav {
+    position: absolute;
+    bottom: 7%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px ;
+    right: 0;
+    left: 0;
+}
+.lock-screen .scr-lock-nav button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,.5);
+    border-radius: 50%;
+}
+.lock-screen .scr-lock-nav button ion-icon {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+.lock-screen .scr-lock-nav .l-scr-btn ion-icon {
+    transform: rotate(-45deg);
+}
+.lock-screen .open-button {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: all .3s linear infinite;
+    animation: slideTop 2s linear infinite;
+
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
