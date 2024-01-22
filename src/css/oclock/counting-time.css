@@ -1,0 +1,65 @@
+.counting-time {
+    background-color: #000;
+    height: 654px;
+    border-radius: 28px;
+    color: #fff;
+    letter-spacing: .6px;
+}
+.counting-time .time {
+    padding: 120px 30px 60px 30px;
+    display: flex;
+    justify-content: center;
+}
+.counting-time .time .number ,
+.counting-time .time div 
+ {
+    font-size: 66px;
+}
+.counting-time .btn {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 12px;
+}
+.counting-time .btn::after {
+    position: absolute;
+    cursor: pointer;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    left: 48%;
+    bottom: 50%;
+    background-color: #fff;
+}
+.counting-time .btn::before {
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    right: 48%;
+    bottom: 50%;
+    background-color: #4b4b4b;
+}
+.counting-time .btn .btn-1,
+.counting-time .btn .btn-2 {
+    cursor: pointer;
+    width: 58px;
+    height: 58px;
+    background: #1c1c1e;
+    color: #727272;
+    border-radius: 50%;
+    line-height: 58px;
+}
+.counting-time .btn .btn-2 {
+    color: #239e3e;
+    background-color: rgba(21, 70, 31,.5);
+}
+
+.footer-oclock {
+    background-color: #000 !important;
+}

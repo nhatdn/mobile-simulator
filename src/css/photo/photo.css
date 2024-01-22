@@ -1,0 +1,110 @@
+.footer-list-call {
+    bottom: -4px !important;
+    border-bottom-left-radius: 26px !important;
+    border-bottom-right-radius: 26px !important;
+}
+.container {
+}
+.photo {
+    color: #fff;
+    width: 100%;
+    height: 650px;
+}
+.photo .nav-photo {
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 40px;
+    padding: 12px;
+}
+
+.photo .nav-photo .left span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0;
+}
+.photo .nav-photo .left p {
+    font-size: 12px;
+}
+.photo .nav-photo .right {
+    display: inline-flex;
+}
+.photo .nav-photo .right .select {
+    margin-right: 4px;
+    line-height: 12px;
+}
+.photo .nav-photo .right .select, 
+.photo .nav-photo .right box-icon {
+    width: 100%;
+    padding: 2px 6px;
+    height: 16px;
+    background-color:  #595858;
+    border-radius: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.photo .nav-photo .right box-icon {
+    color: #fff !important;
+}
+.body-photo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2px;
+    border-radius: 28px;
+    overflow-y: scroll;
+    height: 654px;
+}
+.body-photo img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+.photo-button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    padding: 6px 0px;
+    right: 0;
+    left: 0;
+    margin: 4px 28px;
+    justify-content: center;
+    text-align: center;
+    background-color: #595858;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.photo-button .item-button {
+    padding: 2px 12px ;
+}
+.photo-button .item-button span {
+    display: block;
+    padding: 2px 4px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  .photo-button .item-button.active {
+    background-color: #cecaca;
+    border-radius: 20px;
+    color: #595858;
+  }

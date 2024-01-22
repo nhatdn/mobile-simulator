@@ -2,3 +2,6 @@ label {
     font-size: 9px !important;
     letter-spacing: .7px;
 }
+.search-input {
+    width: 100%;
+}

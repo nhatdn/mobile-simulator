@@ -1,15 +1,19 @@
 form {
     text-align: center;
 }
+.search input  {
+    width: 100%;
+    padding: 8px 36px !important;
+}
 .slide-left {
     overflow-y:hidden;
     background-color: rgba(140,124,109, .5);
     border-radius: 30px;
     height: 650px;
+    padding: 0;
 }
 .slide-left .search-library {
     display: flex;
-    width: max-content;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
@@ -17,6 +21,8 @@ form {
     background-color: rgb(54,59,68);
     margin-top: 60px;
     margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .slide-left .search-library input {
@@ -24,19 +30,19 @@ form {
     background-color: rgb(54,59,68);
     outline: none;
     width: 138px;
-    font-size: 14px;
-    text-align: center;
+    font-size: 12px;
     color: #ccc;
 }
 .slide-left .search-library ion-icon {
     font-size: 18px;
     color: #ccc;
     line-height: 30px;
-    margin-left: 14px;
+    margin-left: 18px;
 }
 .show-library-apps {
     display: grid;
     grid-template-columns: auto auto;
+    align-items: center;
     gap: 12px;
     padding: 0 16px;
 }
