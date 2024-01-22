@@ -2,7 +2,7 @@
     /* left: 50%;
     transform: translateX(-50%); */
     position: relative;
-    background-image: url(/mobile-simulator/src/img/bg2.jpg);
+    background-image: url(./src/img/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
