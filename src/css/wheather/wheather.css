@@ -1,0 +1,115 @@
+.wheather {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 18px;
+    background: #000;
+    color: #fff;
+    height: 651px;
+    border-radius: 29px;
+    overflow-y: scroll;
+}
+.wheather ion-icon {
+    color: #fff;
+}
+.nav-wheather {
+    position: fixed;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #fff;
+    flex: 1;
+    background: rgba(0,0,0,1);
+    border-top-right-radius:28px ;
+    border-top-left-radius:28px ;
+    padding: 36px 16px 12px 12px;
+}
+.nav-wheather .title {
+    padding: 4px 0;
+    margin-top: 28px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav-wheather i {
+   text-align: right;
+   float: right;
+   padding: 4px;
+   font-size: 16px;
+   cursor: pointer;
+}
+.nav-wheather .input {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: #585656;
+    border-radius: 8px;
+}
+.nav-wheather .input ion-icon {
+  font-size: 20px;
+  margin-left: 6px;
+}
+.nav-wheather .input input {
+   width: 100%;
+   background: transparent;
+   height: 24px;
+   border: none;
+   outline: none;
+   font-size: 12px;
+   color: #fff;
+}
+.item-wheather {
+    position: relative;
+    background-image: url(/mobile-simulator/src/img/mua.jpg);
+    height: 96px;
+    margin-top: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.item-wheather .info-wheather,
+.item-wheather .more {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.item-wheather .info-wheather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.item-wheather .info-wheather .location h1 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 8px;
+}
+.item-wheather .info-wheather .location span {
+    padding: 4px 8px;
+    font-weight: 600;
+
+}
+.item-wheather .info-wheather .deg {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 8px;
+}
+.item-wheather .more {
+    position: absolute;
+    bottom: 12px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    font-weight: 600;
+}
+.show-list-wheather p,
+.show-list-wheather  a{
+    text-align: center;
+    font-size: 8px;
+    color:#7d7d7f ;
+}
